@@ -1,0 +1,10 @@
+Exercise 01 - ID Generator
+
+- Does new identifier differ from the preceding identifier by one?
+
+- Is Singleton pattern used to ensure existence of a single class instance?
+- Does User class constructor have identifier initialization logics?
+
+- Is "get" the only method defined for the user identifier?
+
+- Is there a program file demonstrating how the described classes work?

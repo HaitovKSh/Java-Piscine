@@ -1,0 +1,8 @@
+Exercise 02 - List of Users
+
+- Are both interface and its implementing class implemented?
+
+- Does the class implementation imply array size increase in case of an overflow?
+- Is required exception thrown when searching for a nonexistent user?
+
+- Is there a program file demonstrating how the described classes work?

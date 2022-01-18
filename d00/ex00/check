@@ -1,0 +1,20 @@
+Exercise 00 - Sum of Digits
+
+- Does the number in the code have six digits?
+
+- Is the variable for value storage declared as number?
+
+- Is it true that maximum 8 variables are used?
+
+- Is it true that changing the operand to any six-figure number does not result
+    in modification of other part of the code, and application operability is
+    retained? (e. g. int number = 479598; int result =4+7+9+5+9+8;)
+
+-> 162
+    false 12
+-> 113
+    true 10
+-> 42
+    false 1
+-> -100
+    Illegal Argument

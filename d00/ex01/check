@@ -1,0 +1,14 @@
+Exercise 01 — Really Prime Number
+
+- Is the number of iterations output by the program no greater
+
+than the numbers specified in examples?
+
+- Does the system output IllegalArgument for 0?
+
+- Does the system output IllegalArgument for 1?
+
+- Is the number of iterations for numbers 2 and 3 equal to 1?
+
+- Does the program exit with code -1 when errors occur? (System.exit)
+- Does IllegalArgument message output via System.err?

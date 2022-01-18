@@ -1,0 +1,9 @@
+Exercise 02 - Endless Sequence (or not)
+
+- If 42 is entered into the program immediately, will it exit with
+output ‘Count of coffee-request - 0’?
+
+- Does the program output a correct result if numbers are not entered
+in a new line, rather sequentially, and separated by a space?
+
+- Is the "-" signed separated by a space on both sides?

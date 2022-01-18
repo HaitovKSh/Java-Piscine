@@ -1,0 +1,10 @@
+Exercise 00 - Models
+
+- Are both domain knowledge models developed?
+
+- Do model fields match the task requirements?
+
+- Are all model fields private?
+
+- Do models contain validity checks for values of transaction amounts and user balance?
+- ls there a program file demonstrating how the described classes work?

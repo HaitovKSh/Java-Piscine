@@ -1,0 +1,10 @@
+Exercise 04 - Business Logic
+
+- Does the implemented service contain all the methods specified in the task?
+
+- Does the service have a Logic for creating a transaction pair with the same identifier for recipient and sender?
+- ls a required exception thrown when attempting to transfer an amount exceeding user balance?
+
+- Do names of each additional methods of each class fully comply with their intended use?
+
+- Is there a program file demonstrating how the described classes work?

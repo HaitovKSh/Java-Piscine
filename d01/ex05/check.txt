@@ -1,0 +1,5 @@
+Exercise 05 - Menu
+
+- Does the program support two-mode startup?
+- Does the program output a warning about invalid input data?
+- Will the program output all unconfirmed transfers correctly if all transfers of a specific user are deleted in Dev mode?

@@ -1,0 +1,11 @@
+Exercise 03 - List of Transactions
+
+- Are both interface and its implementing class implemented?
+
+- Does User class contain the required field for storing a transaction list?
+- Is anew transaction added within O(1)?
+
+- Is transaction list implemented as a linked list?
+
+- Is a required exception thrown when searching for a nonexistent transaction?
+- Is there a program file demonstrating how the described classes work?

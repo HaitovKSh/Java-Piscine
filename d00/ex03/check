@@ -1,0 +1,176 @@
+Exercise 03 — A Little Bit of Statistics
+
+- Does the program output correct response for the following input data?
+-> Week 1
+-> 5 6 7 8 9
+-> Week 2
+-> 5 6 7 8 9
+-> Week 3
+-> 5 6 7 8 9
+-> Week 4
+-> 56789
+-> Week 5
+-> 56789
+-> Week 6
+-> 56789
+-> Week 7
+-> 56789
+-> Week 8
+-> 56789
+-> Week 9
+-> 56789
+-> Week 10
+-> 56789
+-> Week 11
+-> 56789
+-> Week 12
+-> 56789
+-> Week 13
+-> 56789
+-> Week 14
+-> 56789
+-> Week 15
+-> 56789
+-> Week 16
+-> 56789
+-> Week 17
+-> 56789
+-> 42
+
+- If weeks are entered in incorrect order, will the program quit
+with -1 code and IllegalArgument via System.err message?
+- Is line concatenation within Loop for forming the result missing?
+
+
+/* Test1 */
+
+-> Week 1
+-> 1 2 3 4 5
+-> Week 2
+-> 9 9 9 9 9
+-> Week 3
+-> 4 5 6 7 9
+-> Week 4
+-> 9 9 9 9 9
+-> Week 5
+-> 9 9 9 9 9
+-> Week 6
+-> 9 9 9 9 9
+-> Week 7
+-> 9 9 9 9 9
+-> Week 8
+-> 9 9 9 9 9
+-> Week 9
+-> 9 9 9 9 9
+-> Week 10
+-> 9 9 9 9 9
+-> Week 11
+-> 9 9 9 9 9
+-> Week 12
+-> 9 9 9 9 9
+-> Week 13
+-> 9 9 9 9 9
+-> Week 14
+-> 9 9 9 9 9
+-> Week 15
+-> 9 9 9 9 9
+-> Week 16
+-> 9 9 9 9 9
+-> Week 17
+-> 9 9 9 9 9
+-> Week 18
+-> 9 9 9 9 9
+-> 42
+
+/* Test2 */
+
+-> Week 1
+-> 4 5 2 4 2
+-> Week 2
+-> 7 7 7 7 6
+-> Week 3
+-> 4 3 4 9 8
+-> Week 4
+-> 9 9 4 6 7
+-> 42
+
+/* Test3 */
+
+-> Week 1
+-> 1 2 3 4 5
+-> Week 2
+-> 1 2 3 4 5
+-> Week 3
+-> 1 2 3 4 5
+-> Week 4
+-> 1 2 3 4 5
+-> Week 5
+-> 1 2 3 4 5
+-> Week 6
+-> 1 2 3 4 5
+-> Week 7
+-> 1 2 3 4 5
+-> Week 8
+-> 1 2 3 4 5
+-> Week 9
+-> 1 2 3 4 5
+-> Week 10
+-> 1 2 3 4 5
+-> Week 11
+-> 1 2 3 4 5
+-> Week 12
+-> 1 2 3 4 5
+-> Week 13
+-> 1 2 3 4 5
+-> Week 14
+-> 1 2 3 4 5
+-> Week 15
+-> 1 2 3 4 5
+-> Week 16
+-> 1 2 3 4 5
+-> Week 17
+-> 1 2 3 4 5
+-> Week 18
+-> 1 2 3 4 5
+-> 42
+
+/* Test4 */
+
+-> Week 1
+-> 1 2 3 4 5
+-> Week 2
+-> 1 2 3 4 5
+-> 42
+-> Week 3
+-> 1 2 3 4 5
+-> Week 4
+-> 1 2 3 4 5
+-> Week 5
+-> 1 2 3 4 5
+-> Week 6
+-> 1 2 3 4 5
+-> Week 7
+-> 1 2 3 4 5
+-> Week 8
+-> 1 2 3 4 5
+-> Week 9
+-> 1 2 3 4 5
+-> Week 10
+-> 1 2 3 4 5
+-> Week 11
+-> 1 2 3 4 5
+-> Week 12
+-> 1 2 3 4 5
+-> Week 13
+-> 1 2 3 4 5
+-> Week 14
+-> 1 2 3 4 5
+-> Week 15
+-> 1 2 3 4 5
+-> Week 16
+-> 1 2 3 4 5
+-> Week 17
+-> 1 2 3 4 5
+-> Week 18
+-> 1 2 3 4 5
+-> 42
