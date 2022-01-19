@@ -2,6 +2,7 @@ package d01.ex00;
 
 public class User {
     private int id;
+    private static int iteratorId = 1;
     private String name;
     private int balance;
 
@@ -26,7 +27,7 @@ public class User {
     }
 
     private void setId() {
-        this.id = 0xff;
+        this.id = iteratorId++;
     }
 
 
@@ -46,5 +47,12 @@ public class User {
         this.name = name;
     }
 
-
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", balance=" + balance +
+                '}';
+    }
 }

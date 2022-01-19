@@ -27,7 +27,6 @@ public class Transaction {
 
     }
 
-
     private void setId() {
         this.id = new UUID(0xfa,0xaf);
     }
@@ -40,20 +39,21 @@ public class Transaction {
         this.sender = sender;
     }
 
-    public Category setCategory(Category category) {
-        Status ret;
-        if (amount > 0) {
-            ret = Category.DEBIT;
-
-        } else {
-            ret = Category.CREDIT;
-        }
-        this.category = ret;
-        return ret;
+    public void setCategory(Category category) {
+        this.category = (this.amount > 0) ? Category.DEBIT : Category.CREDIT;
     }
 
     public void setAmount(int amount) {
         this.amount = amount;
+    }
+
+    public Status checkStatusTransaction() {
+        if (this.category == Category.DEBIT) {
+
+        } else {
+
+        }
+        return Status.SUCCESS;
     }
 
     public UUID getId() {

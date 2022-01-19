@@ -2,7 +2,7 @@ package d00.ex00;
 
 public class Program {
     public static void main(String[] args) {
-        int number = 23;
+        int number = 479598;
         int ret = 0;
 
         if (number < 0) {
