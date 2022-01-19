@@ -2,6 +2,7 @@ package d01.ex01;
 
 public class User {
     private int id;
+    private static int iteratorId = 1;
     private String name;
     private int balance;
 
@@ -26,7 +27,7 @@ public class User {
     }
 
     private void setId() {
-        this.id = 0xff;
+        this.id = UserIdsGenerator.getInstance().generateId();;
     }
 
 
@@ -38,6 +39,10 @@ public class User {
         this.balance = ((balance > 0) ? balance : 0);
     }
 
+    public void incBalance(int amount) {
+        this.balance += amount;
+    }
+
     public String getName() {
         return name;
     }
@@ -46,5 +51,12 @@ public class User {
         this.name = name;
     }
 
-
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", balance=" + balance +
+                '}';
+    }
 }

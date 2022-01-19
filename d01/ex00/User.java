@@ -39,6 +39,10 @@ public class User {
         this.balance = ((balance > 0) ? balance : 0);
     }
 
+    public void incBalance(int amount) {
+        this.balance += amount;
+    }
+
     public String getName() {
         return name;
     }

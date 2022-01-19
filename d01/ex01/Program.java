@@ -2,8 +2,14 @@ package d01.ex01;
 
 public class Program {
     public static void main(String[] args) {
-        User user1 = new User("Mike", 300, 1);
-        User user2 = new User("John", 500, 2);
-        User user3 = new User("Mike", -200, 3);
+        for (int i = 0; i < 10; i++) {
+            User tmp;
+            if (i % 2 == 0) {
+                tmp = new User("Man", i);
+            }	else {
+                tmp = new User("Woman", i);
+            }
+            System.out.println("User number: '" + i + "', id: '" + tmp.getId() + "';");
+        }
     }
 }

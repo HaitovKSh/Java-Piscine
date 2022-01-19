@@ -11,7 +11,7 @@ public class Transaction {
     private Status status;
 
     private enum Category {
-        DEBIT,
+        DEBET,
         CREDIT
     }
 
@@ -21,39 +21,59 @@ public class Transaction {
     }
 
     public Transaction(User sender, User recipient, int amount) {
-        if ((amount > 0) && sender.getBalance() > amount) {
-            setSender(sender);
+        setId();
+        setSender(sender);
+        setRecipient(recipient);
+        setAmount(amount);
+        setCategory(amount);
+        checkStatusTransaction();
+        if (status == Status.SUCCESS) {
+            completeTransaction();
         }
-
     }
 
     private void setId() {
-        this.id = new UUID(0xfa,0xaf);
+        this.id = UUID.randomUUID();
     }
 
-    public void setRecipient(User recipient) {
+    private void setRecipient(User recipient) {
         this.recipient = recipient;
     }
 
-    public void setSender(User sender) {
+    private void setSender(User sender) {
         this.sender = sender;
     }
 
-    public void setCategory(Category category) {
-        this.category = (this.amount > 0) ? Category.DEBIT : Category.CREDIT;
+    private void setCategory(int amount) {
+        this.category = (amount < 0) ? Category.DEBET : Category.CREDIT;
     }
 
-    public void setAmount(int amount) {
-        this.amount = amount;
+    private void setAmount(int amount) {
+        this.amount = (amount > 0) ? amount : -amount;
     }
 
-    public Status checkStatusTransaction() {
-        if (this.category == Category.DEBIT) {
-
+    private Status checkStatusTransaction() {
+        status = Status.FAIL;
+        if (this.category == Category.DEBET) {
+            if (sender.getBalance() - amount >= 0) {
+                status = Status.SUCCESS;
+            }
         } else {
-
+            if (recipient.getBalance() - amount >= 0) {
+                status = Status.SUCCESS;
+            }
         }
-        return Status.SUCCESS;
+        return status;
+    }
+
+    private void completeTransaction() {
+        if (category == Category.DEBET) {
+            sender.incBalance(-amount);
+            recipient.incBalance(amount);
+        } else {
+            sender.incBalance(amount);
+            recipient.incBalance(-amount);
+        }
     }
 
     public UUID getId() {
@@ -78,5 +98,15 @@ public class Transaction {
 
     public Status getStatus() {
         return status;
+    }
+
+    @Override
+    public String toString() {
+        return "Transaction{" +
+                sender.getName() + " -> " +
+                recipient.getName() +
+                ", " + amount + ", " +
+                ((category == Category.DEBET) ? "OUTCOME" : "INCOME") +
+                ", " + id + "}";
     }
 }
