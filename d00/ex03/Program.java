@@ -56,7 +56,7 @@ public class Program {
     }
 
     public static void illegalArg() {
-        System.out.println("IllegalArgument");
+        System.err.println("IllegalArgument");
         System.exit(-1);
     }
 
