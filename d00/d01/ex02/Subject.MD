@@ -3,7 +3,7 @@ Exercise 00
 Models
 Turn-in directory : еx00/
 
-Files to turn in  :  User.java, Transaction.java, Program.java
+Files to turn in  :  User.java, Transaction.java, ex00.Chat.src.java.edu.school21.chat.models.Main.java
 
 Allowed functions
 
@@ -44,5 +44,5 @@ class:
 It is necessary to check the initial user balance (it cannot be negative), as well as the balance
 for the outgoing (negative amounts only) and incoming (positive amounts only) transactions (use of
 get/set methods).
-Ап example of use of such classes shall be contained in Program file (creation, initialization,
-printing object content оп а console) . All data for class fields шust be hardcoded  in Program.
+Ап example of use of such classes shall be contained in ex00.Chat.src.java.edu.school21.chat.models.Main file (creation, initialization,
+printing object content оп а console) . All data for class fields шust be hardcoded  in ex00.Chat.src.java.edu.school21.chat.models.Main.
